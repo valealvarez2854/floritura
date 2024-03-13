@@ -1,0 +1,215 @@
+body{
+    background-color:#8f546b;
+    font-family: "Bentham", serif; 
+ }
+ header{
+     margin: 0;
+     padding: 0;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Bentham", serif;
+     background: url(../image/pexels-simon-berger-1323550.jpg);
+     background-size: cover;
+ 
+ }
+ h1{
+     color: black;
+     font-family: "Bentham", serif;
+ }
+ h2{
+     color: black;
+     font-family: "Bentham", serif;
+ }
+ h5 {
+     color: black;
+     font-family: "Bentham", serif;
+ }
+ h3 {
+     background-color: white;
+     font-family: "Bentham", serif;
+ }
+ button .header{
+     background-color: #8f546b;
+     font-family: "Bentham", serif;
+ }
+ 
+ a{
+     color: black;
+     font-family: "Bentham", serif;
+ }
+ .container{
+     position: relative;
+     width: 1000px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 440px;
+     grid-gap: 40px;
+ }
+ .container .card{
+     position: relative;
+     background: #ccc;
+     overflow: hidden;
+     border-radius: 10px;
+     transition: 0.5s;
+ }
+ .container .card:hover{
+     transform: translateY(-20px);
+     box-shadow: 0 20px 20px rgba(0,0,0,0,0);
+ }
+ .container .card .img-box{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transition: 0.5s;
+ }
+ .container .card:hover .img-box{
+     opacity: 0.5;
+ }
+ .container .card .img-box img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+ }
+ .container .card .content{
+     position: absolute;
+     width: 100%;
+     height: 60%;
+     bottom: -100%;
+     padding: 20px;
+     padding-top: 60px;
+     box-sizing: border-box;
+     text-align: center;
+     transition: 0.5s;
+ }
+ .container .card:hover .content{
+     bottom: 0;
+ }
+ .container .card:nth-child(1) .content{
+     background: linear-gradient(0deg, #c99282, transparent);
+ }
+ .container .card:nth-child(2) .content{
+     background: linear-gradient(0deg, #b48d5a, transparent);
+ }
+ .container .card:nth-child(3) .content{
+     background: linear-gradient(0deg, #d99ef7, transparent);
+ }
+ .container .card:nth-child(4) .content{
+     background: linear-gradient(0deg, #194976, transparent);
+ }
+ .container .card:nth-child(5) .content{
+     background: linear-gradient(0deg, #fff780 , transparent);
+ }
+ .container .card .content h2{
+     margin: 0 0 10px;
+     padding: 0;
+     color: black;
+     font-size: 20px;
+ }
+ .container .card .content p{
+     margin: 0;
+     padding: 0;
+     color: black;
+     font-size: 16px;
+ }
+ a{
+     color: black;
+     font-family: 'Playfair Display', serif;
+     font-weight: bold;
+ }
+ .container-boton{
+ 
+     position: fixed;
+     z-index: 999;
+     border-radius: 50%;
+     bottom: 0;
+     right: 25px;
+     padding: 25px;
+     transition: ease 0.3s;
+     animation: efecto 1.2s infinite;
+ }
+ .container-boton:hover{
+     transform: scale(1.1);
+     transition: 0.3s;
+ } 
+ h2 {
+     text-align: center;
+ }
+ form {
+     margin-top: 20px;
+ }
+ input[type="text"],
+ input[type="tel"],
+ input[type="email"],
+ select {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     box-sizing: border-box;
+ }
+ input[type="submit"] {
+     width: 100%;
+     padding: 10px;
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+ input[type="submit"]:hover {
+     background-color: #0056b3;
+ }
+ .container-footer {
+     background-color: #f7f7f7;
+     padding: 30px 0;
+   }
+   
+   .container-footer .footer-title {
+     font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 15px;
+   }
+   
+   .container-footer .footer-links {
+     list-style: none;
+     padding: 0;
+   }
+   
+   .container-footer .footer-links li {
+     margin-bottom: 10px;
+   }
+   
+   .container-footer .footer-links a {
+     color: #777;
+     text-decoration: none;
+   }
+   
+   .container-footer .footer-links a:hover {
+     color: #333;
+   }
+   
+   .container-footer .footer-bottom {
+     background-color: #333;
+     color: #fff;
+     padding: 10px 0;
+     text-align: center;
+   }
+   
+   .container-footer .footer img{
+     width: 30px;
+     height: 30px;
+     margin-right: 10px;
+ }
+ .container-footer .logo-img{
+     width: 70px;
+     height: 70px;
+     margin-right: 40px;
+ }
+ 
